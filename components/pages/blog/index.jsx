@@ -2,25 +2,22 @@
 import SEO from "@/components/data/seo";
 import HeaderOne from "@/components/layout/headers/header/header-one";
 import BreadCrumb from "../common/breadcrumb";
-import ServicesMain from "./services";
-import WorkArea from "../home/work";
-import Testimonial from "../home/testimonial";
+import BlogGridMain from "./blog-grid";
 import ScrollToTop from "../common/scroll/scroll-to-top";
 import FooterThree from "@/components/layout/footers/footer-three";
 
-const ServicePage = () => {
+
+const BlogGrid = () => {
     return (
         <>
-            <SEO pageTitle="Nos Formations" />
+            <SEO pageTitle='Blog' />
             <HeaderOne />
-            <BreadCrumb title="Nos Formations" innerTitle="Nos Formations" />
-            <ServicesMain />
-            <WorkArea />
-            <Testimonial />
+            <BreadCrumb title="Blog" innerTitle="Blog" />
+            <BlogGridMain />
             <FooterThree />
             <ScrollToTop />
         </>
     );
 };
 
-export default ServicePage;
+export default BlogGrid;

@@ -1,7 +1,7 @@
 "use client"
 import { useParams, useRouter } from "next/navigation";
 import blogData from '@/components/data/blog-data';
-import BlogDetails from '@/components/pages/blogs/blog-details';
+import BlogDetails from '@/components/pages/blog-details';
 
 const BlogDetail = () => {
     const params = useParams();

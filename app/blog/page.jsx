@@ -1,4 +1,4 @@
-import BlogGrid from "@/components/pages/blogs/blog";
+import BlogGrid from "@/components/pages/blog";
 
 
 const Blog = () => {
