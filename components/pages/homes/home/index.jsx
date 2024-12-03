@@ -7,11 +7,9 @@ import About from "./about";
 import ChooseUs from "./choose-us";
 import Features from "./features";
 import Portfolio from "./portfolio";
-import WorkArea from "./work";
 import Blog from "./blog";
 import Testimonial from "./testimonial";
 import Video from "./video";
-import ContactForm from "./contact-form";
 import Tab from "./tab/tab";
 import FooterThree from "@/components/layout/footers/footer-three";
 
