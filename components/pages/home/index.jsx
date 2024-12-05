@@ -15,7 +15,7 @@ import FooterThree from "@/components/layout/footers/footer-three";
 
 const HomeOne = () => {
     return (
-        <div>
+        <div className="teste_font">
             <SEO pageTitle='Technology' />
             <HeaderOne />
             <BannerOne />

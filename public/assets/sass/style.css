@@ -398,13 +398,13 @@ p {
   position: relative;
   text-transform: capitalize;
   font-family: var(--heading-font);
-  color: var(--primary-color-1);
+  color: var(--color-1);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.87;
   display: inline-block;
   margin-bottom: 14px;
-  background: rgba(14, 89, 242, 0.1019607843);
+  background: rgba(132, 0, 255, 0.102);
   padding: 1px 25px;
   border-radius: 10px;
 }
@@ -1044,6 +1044,7 @@ p {
 /* Pour empêcher les éléments de se redimensionner */
 .text__slider .scroll .brand__area-item {
   flex: 0 0 auto;
+  transition: transform 0.3s ease-in-out;
 }
 /* Animation linéaire qui déplace les éléments horizontalement */
 @keyframes scrollLinear {
@@ -1057,7 +1058,7 @@ p {
 .text__slider .text-slide {
   --gap: 0.1px;
   display: flex;
-  gap: 80px;
+  gap: 80px; 
 }
 
 /* Lorsqu'on survole tout le conteneur .scroll, l'animation se met en pause */
@@ -1068,6 +1069,7 @@ p {
 /* Lorsqu'on survole un des éléments .brand__area-item, l'animation se met également en pause */
 .text__slider .scroll .brand__area-item:hover {
   animation-play-state: paused;
+  transform: scale(1.2);
 }
 
 /* Nous utilisons aussi un événement pour garantir que tout l'ensemble de l'animation s'arrête même lors du survol des éléments */
@@ -4657,6 +4659,26 @@ Responsive Menu Css
 /*==========================================================================
 * About Area One CSS
 ==========================================================================*/
+.about__one{
+  background-image: url(../img/video/backgoundSection.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  /*padding: 310px 0;*/
+  width: 100%;
+  display: block;
+  position: relative;
+}
+.about__one::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #b102dd;
+  opacity: 0.1;
+}
 .about__one-image {
   position: relative;
 }
@@ -4708,10 +4730,12 @@ Responsive Menu Css
 }
 .about__one-content h2 {
   text-transform: none;
+  color: var(--color-1);
+  text-shadow: rgba(0, 0, 0) 0.1em 0.1em 0.4em;
   margin-bottom: 30px;
 }
 .about__one-content p {
-  color: var(--color-2);
+  color: var(--color-1);
   margin-bottom: 30px;
 }
 .about__one-content-service {
@@ -4726,7 +4750,7 @@ Responsive Menu Css
 }
 .about__one-content-service .service span {
   font-size: 18px;
-  color: var(--color-2);
+  color: var(--color-1);
 }
 .about__one-content-service .service i {
   color: var(--color-3);
@@ -5451,8 +5475,8 @@ Responsive Menu Css
 /*==========================================================================
 * Services One Style
 ==========================================================================*/
-.services__one{
-  background: var(--color-6);
+services__one{
+  background: var(--color-5);
   background-image: url();
 }
 .services__one-title h2 {

@@ -48,7 +48,7 @@ const About = () => {
 
     return (
         <>
-        <div className="brand__area pt-115">
+        <div className="brand__area pt-50 pb-50">
             <div className="container">
                 <div className="row">
                     <div className="col-xl-12">
@@ -120,13 +120,13 @@ const About = () => {
                     <div className="col-xl-6 col-lg-5">
                         <div className="about__one-image">
                             <div className="experience-bar animate-y-axis-slider">
-                                <i className="flaticon-consultant"></i>
+                                <i className="fa fa-people-carry"></i>
                                 <div className="experience-bar-right">
                                     <div className="experience-bar-counter">
-                                        <h4 className="counter"><Count number={25}/></h4>
-                                        <span>+</span>
+                                        <h4 className="counter"></h4>
+                                        <span></span>
                                     </div>
-                                    <span>Années d'expérience</span>
+                                    <span>Accompagnement</span>
                                 </div>
                             </div>
                             <div className="about__one-image-wrapper">
@@ -158,7 +158,7 @@ const About = () => {
                                     <span>Croissance personnelle</span>
                                 </div>
                             </div>
-                            <Link href="/about" className="btn-one">En savoir plus<i className="fas fa-arrow-right"></i></Link>
+                            <Link href="/about" className="btn-two">En savoir plus<i className="fas fa-arrow-right"></i></Link>
                         </div>
                     </div>
                 </div>
